@@ -96,16 +96,16 @@
 
         FUNCTION {
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                            &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp F11
-&trans        &trans        &trans        &trans        &trans  &trans      &trans        &trans        &trans        &trans        &trans        &kp F12
-&trans        &trans        &trans        &trans        &trans  &trans      &trans        &trans                                                  &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                               &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans         &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp F11
+&trans        &trans        &trans        &trans        &trans  &kp MINUS      &kp PLUS      &trans        &trans        &trans        &trans        &kp F12
+&trans        &trans        &trans        &trans        &trans  &trans         &trans        &trans                                                  &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                        &kp TILDE         &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_PARENTHESIS
+&kp ESCAPE                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                        &kp TILDE         &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_PARENTHESIS
 &kp EXCLAMATION             &kp AT_SIGN      &kp HASH         &kp DOLLAR       &kp PERCENT  &kp LC(LA(KP_NUMBER_0))      &kp CARET             &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp EQUAL                    &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
 &trans                      &trans           &trans           &trans           &trans       &trans                       &trans                &trans                                                                            &kp PIPE
@@ -147,6 +147,15 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans         &trans  &trans  &trans                        &trans    &trans  &trans  &trans  &trans
+&trans  &kp LS(LG(S))  &trans  &trans  &trans  &trans      &trans    &trans    &trans  &trans  &trans  &trans
+&trans  &trans         &trans  &trans  &trans  &trans      &trans    &trans    &trans  &trans  &trans  &trans
+&trans  &trans         &trans  &trans  &trans  &trans      &mkp MB5  &mkp MB4                          &trans
             >;
         };
     };
